@@ -9,7 +9,7 @@ data class FicheProduit(
     val categoryProduit: String,
     val ingredientsProduit: String,
     val ingredientsInconnusProduit: Int,
-    val imageProduit: String
+    val imageProduit: String,
     )
 
 class FicheProduitViewModel : ViewModel() {
