@@ -1,6 +1,9 @@
 package com.kevin.foodscan.ficheproduit
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import java.util.*
 
 data class FicheProduit(
     val id: Int,
@@ -13,4 +16,19 @@ data class FicheProduit(
     )
 
 class FicheProduitViewModel : ViewModel() {
+
+    private val produit = MutableLiveData<FicheProduit>()
+
+    fun getProduit(): LiveData<FicheProduit> = produit
+
+    fun loadProduit(){
+        produit.value = FicheProduit(
+            1,
+            "BigMac",
+            "McDonald",
+            "Fast Food",
+            "Pain Burger - Steak - Fromage - Salade",
+            0,
+            "")
+    }
 }
