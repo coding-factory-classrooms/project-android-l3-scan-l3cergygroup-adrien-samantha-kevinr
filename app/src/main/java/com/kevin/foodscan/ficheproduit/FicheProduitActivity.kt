@@ -2,6 +2,7 @@ package com.kevin.foodscan.ficheproduit
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.viewModels
 import com.kevin.foodscan.R
 import androidx.lifecycle.Observer
@@ -22,6 +23,6 @@ class FicheProduitActivity : AppCompatActivity() {
     }
 
     private fun onProductUpdated(produit: FicheProduit) {
-        TODO("Not yet implemented")
+        Log.i("FicheProduitActivity", "onProductUpdated: $produit")
     }
 }
