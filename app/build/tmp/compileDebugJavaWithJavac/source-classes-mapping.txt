@@ -1,0 +1,2 @@
+com/kevin/foodscan/BuildConfig.java
+ com.kevin.foodscan.BuildConfig
