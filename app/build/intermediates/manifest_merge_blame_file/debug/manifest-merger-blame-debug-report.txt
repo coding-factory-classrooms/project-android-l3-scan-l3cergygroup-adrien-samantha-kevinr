@@ -28,20 +28,23 @@
 19        android:testOnly="true"
 20        android:theme="@style/Theme.FoodScan" >
 20-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:11:9-46
-21        <activity android:name="com.kevin.foodscan.MainActivity" >
-21-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:12:9-18:20
-21-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:12:19-47
+21        <activity android:name="com.kevin.foodscan.ficheproduit.FicheProduitActivity" >
+21-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:12:9-17:20
+21-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:12:19-68
 22            <intent-filter>
-22-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:13:13-17:29
+22-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:13:13-16:29
 23                <action android:name="android.intent.action.MAIN" />
 23-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:14:17-69
 23-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:14:25-66
 24
 25                <category android:name="android.intent.category.LAUNCHER" />
-25-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:16:17-77
-25-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:16:27-74
+25-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:15:17-77
+25-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:15:27-74
 26            </intent-filter>
 27        </activity>
-28    </application>
-29
-30</manifest>
+28        <activity android:name="com.kevin.foodscan.MainActivity" />
+28-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:18:9-59
+28-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:18:19-47
+29    </application>
+30
+31</manifest>
