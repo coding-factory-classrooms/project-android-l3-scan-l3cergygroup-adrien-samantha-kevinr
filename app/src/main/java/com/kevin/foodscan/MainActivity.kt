@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
     private fun cameraTask() {
         if (hasCameraAccess()) {
             var qrScanner = IntentIntegrator(this)
-            qrScanner.setPrompt("scan a QR code")
+            qrScanner.setPrompt("Scanner votre le code barre")
             qrScanner.setCameraId(0)
             qrScanner.setOrientationLocked(true)
             qrScanner.setBeepEnabled(true)
@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
         } else {
             EasyPermissions.requestPermissions(
                 this,
-                "This app needs access to your camera so you can take pictures.",
+                "Veuillez autoriser l'accès à la caméra afin d'utiliser le scanner.",
                 123,
                 android.Manifest.permission.CAMERA
             )
@@ -121,10 +121,11 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
         var result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
         if (result != null) {
             if (result.contents == null) {
-                Toast.makeText(this, "Result Not Found", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Resultat non trouvé", Toast.LENGTH_SHORT).show()
                 edtCode!!.setText("")
             } else {
                 try {
+                    // Ici on recupere le code scanne et on laffiche dans une div
 
                     cardView1!!.startAnimation(reveal)
                     cardView2!!.startAnimation(hide)

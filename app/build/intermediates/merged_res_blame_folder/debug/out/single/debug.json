@@ -40,6 +40,10 @@
         "source": "C:\\Users\\Samantha\\Desktop\\androidFoodScanner\\app\\src\\main\\res\\layout\\activity_history.xml"
     },
     {
+        "merged": "C:\\Users\\Samantha\\Desktop\\androidFoodScanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_scan.xml.flat",
+        "source": "C:\\Users\\Samantha\\Desktop\\androidFoodScanner\\app\\src\\main\\res\\layout\\item_scan.xml"
+    },
+    {
         "merged": "C:\\Users\\Samantha\\Desktop\\androidFoodScanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Samantha\\Desktop\\androidFoodScanner\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },

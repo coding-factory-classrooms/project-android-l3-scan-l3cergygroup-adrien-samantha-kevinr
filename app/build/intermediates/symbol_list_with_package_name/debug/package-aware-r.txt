@@ -1807,6 +1807,8 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id codeScanRow
+id codeTextView
 id collapseActionView
 id confirm_button
 id container
@@ -1819,6 +1821,7 @@ id counterclockwise
 id custom
 id customPanel
 id cut
+id dataBinding
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -1972,6 +1975,8 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id onAttachStateChangeListener
+id onDateChanged
 id outline
 id outward
 id packed
@@ -1988,6 +1993,7 @@ id percent
 id pin
 id position
 id postLayout
+id posterImageView
 id progress_circular
 id progress_horizontal
 id radio
@@ -2004,6 +2010,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id scantextView
 id screen
 id scroll
 id scrollIndicatorDown
@@ -2076,10 +2083,10 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView2
 id textView3
 id textView4
 id textView5
+id textWatcher
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2211,6 +2218,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_scan
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
