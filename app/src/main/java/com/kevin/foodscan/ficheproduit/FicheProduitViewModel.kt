@@ -31,6 +31,21 @@ class FicheProduitViewModel : ViewModel() {
 
     fun loadProduit(){
 
+        CallAPI()
+
+        produit.value = FicheProduit(
+            1,
+            "BigMac",
+            "McDonald",
+            "Fast Food",
+            "Pain Burger - Steak - Fromage - Salade",
+            0,
+            ""
+        )
+
+    }
+
+    private fun CallAPI(){
         val request = Request.Builder()
             .url("https://world.openfoodfacts.org/api/v0/product/737628064502.json")
             .build()
@@ -54,16 +69,5 @@ class FicheProduitViewModel : ViewModel() {
                 }
             }
         })
-
-        produit.value = FicheProduit(
-            1,
-            "BigMac",
-            "McDonald",
-            "Fast Food",
-            "Pain Burger - Steak - Fromage - Salade",
-            0,
-            ""
-        )
-
     }
 }
