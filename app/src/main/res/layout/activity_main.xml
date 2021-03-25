@@ -111,8 +111,9 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="#087123"
-            android:text="Scan Code"
-            android:textColor="@color/white" />
+            android:text="Test scanner"
+            android:textColor="@color/white"
+            app:backgroundTint="#087123" />
 
         <Button
             android:id="@+id/btnEnterCode"
@@ -122,7 +123,8 @@
             android:layout_weight="1"
             android:background="#087123"
             android:text="Enter Code"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            app:backgroundTint="#087123" />
 
     </LinearLayout>
 

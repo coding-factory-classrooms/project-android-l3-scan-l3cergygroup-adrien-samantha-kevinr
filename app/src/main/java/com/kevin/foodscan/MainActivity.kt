@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
 
         tvText!!.startAnimation(reveal)
         cardView2!!.startAnimation(reveal)
-        tvText!!.setText("Scan QR Code Here")
+        tvText!!.setText("Scan your QR Code")
         cardView2!!.visibility = View.VISIBLE
 
         btnScan!!.setOnClickListener {
@@ -59,16 +59,11 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
 
             cardView2!!.visibility = View.VISIBLE
             cardView1!!.visibility = View.GONE
-            tvText!!.setText("Scan QR Code Here")
-
-
-
+            tvText!!.setText("Scan your QR Code")
         }
-
         cardView2!!.setOnClickListener {
             cameraTask()
         }
-
         btnEnter!!.setOnClickListener {
 
             if (edtCode!!.text.toString().isNullOrEmpty()) {
@@ -89,7 +84,6 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
             cardView1!!.visibility = View.VISIBLE
             tvText!!.setText("Enter QR Code Here")
         }
-
     }
 
     private fun hasCameraAccess(): Boolean {
@@ -97,9 +91,7 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
     }
 
     private fun cameraTask() {
-
         if (hasCameraAccess()) {
-
             var qrScanner = IntentIntegrator(this)
             qrScanner.setPrompt("scan a QR code")
             qrScanner.setCameraId(0)
@@ -118,8 +110,6 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-
-
         var result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
         if (result != null) {
             if (result.contents == null) {
@@ -170,6 +160,4 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
 
     override fun onRationaleAccepted(requestCode: Int) {
     }
-
-
 }

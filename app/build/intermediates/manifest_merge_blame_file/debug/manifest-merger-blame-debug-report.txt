@@ -13,105 +13,104 @@
 11    <uses-permission android:name="android.permission.CAMERA" />
 11-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:5:5-65
 11-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:5:22-62
-12
-13    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
-14    <uses-feature
-14-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:26:5-28:36
-15        android:name="android.hardware.camera"
-15-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:27:9-47
-16        android:required="false" />
-16-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:28:9-33
-17    <uses-feature
-17-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:29:5-31:36
-18        android:name="android.hardware.camera.front"
-18-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:30:9-53
-19        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-19-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:31:9-33
-20    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
-21    <uses-feature
-21-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:34:5-36:36
-22        android:name="android.hardware.camera.autofocus"
-22-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:35:9-57
-23        android:required="false" />
-23-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:36:9-33
-24    <uses-feature
-24-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:37:5-39:36
-25        android:name="android.hardware.camera.flash"
-25-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:38:9-53
-26        android:required="false" />
-26-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:39:9-33
-27    <uses-feature
-27-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:40:5-42:36
-28        android:name="android.hardware.screen.landscape"
-28-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:41:9-57
-29        android:required="false" />
-29-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:42:9-33
-30    <uses-feature
-30-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:43:5-45:36
-31        android:name="android.hardware.wifi"
-31-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:44:9-45
-32        android:required="false" />
-32-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:45:9-33
-33
-34    <application
-34-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:7:5-23:19
-35        android:allowBackup="true"
-35-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:8:9-35
-36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-36-->[androidx.core:core:1.3.2] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\b4a4e2693d052802666bef6cc39feff5\core-1.3.2\AndroidManifest.xml:24:18-86
-37        android:debuggable="true"
-38        android:icon="@drawable/ic_launcher_foodscan"
-38-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:9:9-54
-39        android:label="@string/app_name"
-39-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:10:9-41
-40        android:roundIcon="@drawable/ic_launcher_foodscan"
-40-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:11:9-59
-41        android:supportsRtl="true"
-41-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:12:9-35
-42        android:testOnly="true"
-43        android:theme="@style/Theme.FoodScan" >
-43-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:13:9-46
-44        <activity
-44-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:14:9-22:20
-45            android:name="com.kevin.foodscan.MainActivity"
-45-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:15:13-41
-46            android:screenOrientation="portrait" >
-46-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:16:13-49
-47            <intent-filter>
-47-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:17:13-21:29
-48                <action android:name="android.intent.action.MAIN" />
-48-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:18:17-69
-48-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:18:25-66
-49
-50                <category android:name="android.intent.category.LAUNCHER" />
-50-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:20:17-77
-50-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:20:27-74
-51            </intent-filter>
-52        </activity>
-53        <activity
-53-->[pub.devrel:easypermissions:3.0.0] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\d54b7459f05ae1d2a7f92c379996502c\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
-54            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-54-->[pub.devrel:easypermissions:3.0.0] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\d54b7459f05ae1d2a7f92c379996502c\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
-55            android:exported="false"
-55-->[pub.devrel:easypermissions:3.0.0] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\d54b7459f05ae1d2a7f92c379996502c\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
-56            android:label=""
-56-->[pub.devrel:easypermissions:3.0.0] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\d54b7459f05ae1d2a7f92c379996502c\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
-57            android:theme="@style/EasyPermissions.Transparent" />
-57-->[pub.devrel:easypermissions:3.0.0] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\d54b7459f05ae1d2a7f92c379996502c\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
-58        <activity
-58-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:48:9-54:63
-59            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-59-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:49:13-74
-60            android:clearTaskOnLaunch="true"
-60-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:50:13-45
-61            android:screenOrientation="sensorLandscape"
-61-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:51:13-56
-62            android:stateNotNeeded="true"
-62-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:52:13-42
-63            android:theme="@style/zxing_CaptureTheme"
-63-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:53:13-54
-64            android:windowSoftInputMode="stateAlwaysHidden" />
-64-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:54:13-60
-65    </application>
-66
-67</manifest>
+12    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+13    <uses-feature
+13-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:26:5-28:36
+14        android:name="android.hardware.camera"
+14-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:27:9-47
+15        android:required="false" />
+15-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:28:9-33
+16    <uses-feature
+16-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:29:5-31:36
+17        android:name="android.hardware.camera.front"
+17-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:30:9-53
+18        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+18-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:31:9-33
+19    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+20    <uses-feature
+20-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:34:5-36:36
+21        android:name="android.hardware.camera.autofocus"
+21-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:35:9-57
+22        android:required="false" />
+22-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:36:9-33
+23    <uses-feature
+23-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:37:5-39:36
+24        android:name="android.hardware.camera.flash"
+24-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:38:9-53
+25        android:required="false" />
+25-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:39:9-33
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:40:5-42:36
+27        android:name="android.hardware.screen.landscape"
+27-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:41:9-57
+28        android:required="false" />
+28-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:42:9-33
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:43:5-45:36
+30        android:name="android.hardware.wifi"
+30-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:44:9-45
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:45:9-33
+32
+33    <application
+33-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:7:5-22:19
+34        android:allowBackup="true"
+34-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:8:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.3.2] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\b4a4e2693d052802666bef6cc39feff5\core-1.3.2\AndroidManifest.xml:24:18-86
+36        android:debuggable="true"
+37        android:icon="@drawable/ic_launcher_foodscan"
+37-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:9:9-54
+38        android:label="@string/app_name"
+38-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:10:9-41
+39        android:roundIcon="@drawable/ic_launcher_foodscan"
+39-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:11:9-59
+40        android:supportsRtl="true"
+40-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:12:9-35
+41        android:testOnly="true"
+42        android:theme="@style/Theme.FoodScan" >
+42-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:13:9-46
+43        <activity
+43-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:14:9-21:20
+44            android:name="com.kevin.foodscan.MainActivity"
+44-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:15:13-41
+45            android:screenOrientation="portrait" >
+45-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:16:13-49
+46            <intent-filter>
+46-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:17:13-20:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:18:17-69
+47-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:18:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:19:17-77
+49-->C:\Users\Samantha\Desktop\androidFoodScanner\app\src\main\AndroidManifest.xml:19:27-74
+50            </intent-filter>
+51        </activity>
+52        <activity
+52-->[pub.devrel:easypermissions:3.0.0] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\d54b7459f05ae1d2a7f92c379996502c\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+53            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+53-->[pub.devrel:easypermissions:3.0.0] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\d54b7459f05ae1d2a7f92c379996502c\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+54            android:exported="false"
+54-->[pub.devrel:easypermissions:3.0.0] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\d54b7459f05ae1d2a7f92c379996502c\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+55            android:label=""
+55-->[pub.devrel:easypermissions:3.0.0] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\d54b7459f05ae1d2a7f92c379996502c\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+56            android:theme="@style/EasyPermissions.Transparent" />
+56-->[pub.devrel:easypermissions:3.0.0] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\d54b7459f05ae1d2a7f92c379996502c\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+57        <activity
+57-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:48:9-54:63
+58            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+58-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:49:13-74
+59            android:clearTaskOnLaunch="true"
+59-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:50:13-45
+60            android:screenOrientation="sensorLandscape"
+60-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:51:13-56
+61            android:stateNotNeeded="true"
+61-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:52:13-42
+62            android:theme="@style/zxing_CaptureTheme"
+62-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:53:13-54
+63            android:windowSoftInputMode="stateAlwaysHidden" />
+63-->[com.journeyapps:zxing-android-embedded:3.0.1] C:\Users\Samantha\.gradle\caches\transforms-2\files-2.1\953608bd14baa896de0e2860ff39072a\jetified-zxing-android-embedded-3.0.1\AndroidManifest.xml:54:13-60
+64    </application>
+65
+66</manifest>
