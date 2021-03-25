@@ -20,6 +20,7 @@ import pub.devrel.easypermissions.AppSettingsDialog
 import pub.devrel.easypermissions.EasyPermissions
 import java.util.jar.Manifest
 import com.journeyapps.barcodescanner.CaptureActivity
+import com.kevin.foodscan.HistoryActivity
 
 class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
         EasyPermissions.RationaleCallbacks {
@@ -76,14 +77,21 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
             }
         }
         btnEnterCode!!.setOnClickListener {
-            tvText!!.startAnimation(reveal)
+/*            tvText!!.startAnimation(reveal)
             cardView1!!.startAnimation(reveal)
             cardView2!!.startAnimation(hide)
 
             cardView2!!.visibility = View.GONE
             cardView1!!.visibility = View.VISIBLE
-            tvText!!.setText("Enter QR Code Here")
+            tvText!!.setText("Enter QR Code Here")*/
+            cardView2!!.startAnimation(hide)
+            navigateToHistory()
         }
+    }
+
+    private fun navigateToHistory() {
+        val intent = Intent(this, HistoryActivity::class.java)
+        startActivity(intent)
     }
 
     private fun hasCameraAccess(): Boolean {
