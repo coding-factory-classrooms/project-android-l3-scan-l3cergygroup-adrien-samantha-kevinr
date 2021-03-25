@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import okhttp3.*
 import okhttp3.Headers.*
+import org.json.JSONObject
 import java.io.Closeable
 import java.io.IOException
 import java.util.*
@@ -30,22 +31,6 @@ class FicheProduitViewModel : ViewModel() {
     fun getProduit(): LiveData<FicheProduit> = produit
 
     fun loadProduit(){
-
-        CallAPI()
-
-        produit.value = FicheProduit(
-            1,
-            "BigMac",
-            "McDonald",
-            "Fast Food",
-            "Pain Burger - Steak - Fromage - Salade",
-            0,
-            ""
-        )
-
-    }
-
-    private fun CallAPI(){
         val request = Request.Builder()
             .url("https://world.openfoodfacts.org/api/v0/product/737628064502.json")
             .build()
@@ -63,9 +48,27 @@ class FicheProduitViewModel : ViewModel() {
                         println("ResultProduct: $name: $value")
                     }
 
-                    println(response.body!!.string())
+                    val body = response.body!!.string()
+                    val jsonRoot = JSONObject(body)
+                    val jsonProduct = jsonRoot.getJSONObject("product")
+                    val name = jsonProduct.getString("generic_name_en")
+                    val brand = jsonProduct.getString("brands")
+                    val category = jsonProduct.getString("categories")
+                    val ingredients = jsonProduct.getString("ingredients_text")
+                    val unknownCount = jsonProduct.getInt("unknown_ingredients_n")
+                    val image = jsonProduct.getString("image_ingredients_thumb_url")
 
-                    Log.i("FicheProduitViewModel", "onResponse: ${response.body.toString()}")
+                    Log.i("FicheProduitViewModel", "onResponse: $body")
+
+                    produit.value = FicheProduit(
+                        1,
+                        name,
+                        brand,
+                        category,
+                        ingredients,
+                        unknownCount,
+                        image
+                    )
                 }
             }
         })
