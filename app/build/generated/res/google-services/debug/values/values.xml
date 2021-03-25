@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">909477444445-b55eurjqk0fp4fu49arq327snhhaonr8.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">909477444445</string>
+    <string name="google_api_key" translatable="false">AIzaSyDsdUFAOW7Z7egFeaWT8rHnX5xiKRGFIHU</string>
+    <string name="google_app_id" translatable="false">1:909477444445:android:7666d1f80fb384fcb206b4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDsdUFAOW7Z7egFeaWT8rHnX5xiKRGFIHU</string>
+    <string name="google_storage_bucket" translatable="false">food-scan-5b891.appspot.com</string>
+    <string name="project_id" translatable="false">food-scan-5b891</string>
+</resources>

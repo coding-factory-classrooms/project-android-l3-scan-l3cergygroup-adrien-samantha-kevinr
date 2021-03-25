@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "909477444445",
+    "project_id": "food-scan-5b891",
+    "storage_bucket": "food-scan-5b891.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909477444445:android:7666d1f80fb384fcb206b4",
+        "android_client_info": {
+          "package_name": "com.kevin.foodscan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909477444445-b55eurjqk0fp4fu49arq327snhhaonr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsdUFAOW7Z7egFeaWT8rHnX5xiKRGFIHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909477444445-b55eurjqk0fp4fu49arq327snhhaonr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
