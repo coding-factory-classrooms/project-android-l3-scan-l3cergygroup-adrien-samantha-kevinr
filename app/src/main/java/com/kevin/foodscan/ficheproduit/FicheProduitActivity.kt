@@ -21,7 +21,7 @@ class FicheProduitActivity : AppCompatActivity() {
             Observer {produit -> onProductUpdated(produit)}
         )
 
-        model.loadProduit(1)
+        model.loadProduit()
     }
 
     private fun onProductUpdated(produit: FicheProduit) {
