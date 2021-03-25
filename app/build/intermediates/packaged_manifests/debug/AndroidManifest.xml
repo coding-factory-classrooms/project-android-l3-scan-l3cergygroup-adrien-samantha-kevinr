@@ -18,13 +18,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.FoodScan" >
-        <activity android:name="com.kevin.foodscan.MainActivity" >
+        <activity android:name="com.kevin.foodscan.ficheproduit.FicheProduitActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.kevin.foodscan.MainActivity" />
     </application>
 
 </manifest>
