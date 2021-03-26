@@ -1689,6 +1689,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id IngredientsProduitTextView
 id META
 id NO_DEBUG
 id SHIFT
@@ -1774,6 +1775,7 @@ id bounce
 id buttonPanel
 id cache_measures
 id cancel_button
+id categorieProduitTextView
 id center
 id center_horizontal
 id center_vertical
@@ -1891,6 +1893,7 @@ id line3
 id linear
 id listMode
 id list_item
+id marqueProduitTextView
 id masked
 id material_clock_display
 id material_clock_face
@@ -1946,6 +1949,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id navigation_header_container
+id nbProduitsInconnusTextView
 id never
 id noScroll
 id none
