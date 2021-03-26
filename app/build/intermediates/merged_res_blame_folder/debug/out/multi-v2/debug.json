@@ -5320,7 +5320,7 @@
             "outputFile": "/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/30c9fda73e057ff69f2561d37095884d/lifecycle-viewmodel-2.3.0/res/values/values.xml",
+                    "source": "/Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/3eaf1bead8103e492d1590e97454c7ff/lifecycle-viewmodel-2.3.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -5466,23 +5466,6 @@
                     }
                 },
                 {
-                    "source": "/Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/47d37d40a76a5e117c706e66a024b748/lifecycle-runtime-2.3.0/res/values/values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "42",
-                        "endOffsets": "93"
-                    },
-                    "to": {
-                        "startLines": "990",
-                        "startColumns": "4",
-                        "startOffsets": "57547",
-                        "endColumns": "42",
-                        "endOffsets": "57585"
-                    }
-                },
-                {
                     "source": "/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/res/values/themes.xml",
                     "from": {
                         "startLines": "2",
@@ -5535,6 +5518,23 @@
                         "startOffsets": "19541,25534,25581,25628,26372,26417,26583",
                         "endColumns": "41,46,46,46,44,44,41",
                         "endOffsets": "19578,25576,25623,25670,26412,26457,26620"
+                    }
+                },
+                {
+                    "source": "/Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/2d68208831ee71a1e8430ce597fb905e/lifecycle-runtime-2.3.1/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    },
+                    "to": {
+                        "startLines": "990",
+                        "startColumns": "4",
+                        "startOffsets": "57547",
+                        "endColumns": "42",
+                        "endOffsets": "57585"
                     }
                 },
                 {
