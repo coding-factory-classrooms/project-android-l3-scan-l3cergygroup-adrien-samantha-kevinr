@@ -31,6 +31,7 @@ class FicheProduitViewModel : ViewModel() {
         val request = Request.Builder()
                 .url("https://world.openfoodfacts.org/api/v0/product/737628064502.json")
                 .build()
+
         client.newCall(request).enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {
                 //e.printStackTrace()
@@ -46,31 +47,34 @@ class FicheProduitViewModel : ViewModel() {
                     }
 
                     val body = response.body!!.string()
-                    val jsonRoot = JSONObject(body)
-                    val jsonProduct = jsonRoot.getJSONObject("product")
-                    val name = jsonProduct.getString("generic_name_en")
-                    val brand = jsonProduct.getString("brands")
-                    val category = jsonProduct.getString("categories")
-                    val ingredients = jsonProduct.getString("ingredients_text")
-                    val unknownCount = jsonProduct.getInt("unknown_ingredients_n")
-                    val image = jsonProduct.getString("image_ingredients_thumb_url")
-
-                    produit.value = FicheProduit(
-                            name,
-                            brand,
-                            category,
-                            ingredients,
-                            unknownCount,
-                            image
-                    )
 
                     try {
                         // some code
-                        JSONObject(body)
+                        val jsonRoot = JSONObject(body)
+                        val jsonProduct = jsonRoot.getJSONObject("product")
+                        val name = jsonProduct.getString("generic_name_en")
+                        val brand = jsonProduct.getString("brands")
+                        val category = jsonProduct.getString("categories")
+                        val ingredients = jsonProduct.getString("ingredients_text")
+                        val unknownCount = jsonProduct.getInt("unknown_ingredients_n")
+                        val image = jsonProduct.getString("image_ingredients_thumb_url")
+
+                        produit.postValue(FicheProduit(
+                                name,
+                                brand,
+                                category,
+                                ingredients,
+                                unknownCount,
+                                image
+                        ))
+
+
                     } catch (e: IOException) {
                         // handler
                         Log.e("FicheProduitViewModel", "onResponse: " + e)
                     }
+
+
 
                 }
             }
