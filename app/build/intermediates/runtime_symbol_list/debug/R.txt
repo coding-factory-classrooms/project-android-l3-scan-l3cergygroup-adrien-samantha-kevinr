@@ -2289,6 +2289,7 @@ int layout zxing_capture 0x7f0b0073
 int mipmap ic_launcher 0x7f0c0000
 int mipmap ic_launcher_round 0x7f0c0001
 int mipmap logoscan 0x7f0c0002
+int mipmap vegetables 0x7f0c0003
 int plurals mtrl_badge_content_description 0x7f0d0000
 int raw zxing_beep 0x7f0e0000
 int string abc_action_bar_home_description 0x7f0f0000

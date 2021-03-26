@@ -14,7 +14,7 @@ tools:context=".history.HistoryActivity">
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:srcCompat="@drawable/ic_launcher_background"
+    app:srcCompat="@mipmap/vegetables"
     tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 <TextView
@@ -27,7 +27,7 @@ tools:context=".history.HistoryActivity">
     android:paddingTop="5dp"
     android:paddingRight="10dp"
     android:paddingBottom="5dp"
-    android:text="TextView"
+    android:text="Historique des scans :"
     android:textSize="32sp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"

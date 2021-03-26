@@ -20,7 +20,7 @@ class HistoryActivity : AppCompatActivity() {
         setContentView(R.layout.activity_history)
 
 
-        model.loadScan()
+        model.loadMovies()
         model.getScan().observe(
             this,
             Observer {scan -> onScanUpdated(scan)}
@@ -29,11 +29,13 @@ class HistoryActivity : AppCompatActivity() {
         // valeur est nul car on arrive pas a appeler loadScan() sans que tout plante
 
 
-        val numeroScan = model.getScan().value?.code
+        val numeroScan = model.getScansLiveData()
 
         val textView = findViewById<TextView>(R.id.scantextView)
         textView.refreshDrawableState()
-        textView.text = numeroScan
+        textView.text = model.getScantrue()?.get(0)?.code
+        model.loadScan()
+        //textView.text = model.getScan().value?.code
 
     }
     private fun onScanUpdated(scan: Scan) {

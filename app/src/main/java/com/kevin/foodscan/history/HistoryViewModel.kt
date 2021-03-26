@@ -21,10 +21,23 @@ class HistoryViewModel : ViewModel() {
     private val scan = MutableLiveData<Scan>()
     private val client = OkHttpClient()
 
-    fun getScan(): LiveData<Scan> = scan
+    fun getScan(): LiveData<Scan> {
+        return scan
+    }
+
+    fun getScantrue(): List<Scan>? {
+        return getScansLiveData().value
+    }
+
+
+
     private val scansLiveData = MutableLiveData<List<Scan>>()
     fun getScansLiveData(): LiveData<List<Scan>> = scansLiveData
 
+
+    private val scans = listOf(
+        Scan("3228886030011",0)
+    )
     fun loadScan(){
         val request = Request.Builder()
             .url("https://world.openfoodfacts.org/api/v0/product/737628064502.json")
@@ -46,10 +59,14 @@ class HistoryViewModel : ViewModel() {
                     val JSONProduct = jsonRoot.getJSONObject("product")
                     val unknownCount = JSONProduct.getInt("unknown_ingredients_n");
                     Log.i("TestProduct", "onResponse: $unknownCount")
-                    scan.postValue(Scan("0133333",2))
+                    scan.postValue(Scan("0133333",unknownCount))
                 }
             }
 
         })
+    }
+
+    fun loadMovies() {
+        scansLiveData.value = scans
     }
 }
