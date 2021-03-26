@@ -1,2 +1,4 @@
 com/kevin/foodscan/BuildConfig.java
  com.kevin.foodscan.BuildConfig
+com/kevin/foodscan/DataBindingTriggerClass.java
+ com.kevin.foodscan.DataBindingTriggerClass
