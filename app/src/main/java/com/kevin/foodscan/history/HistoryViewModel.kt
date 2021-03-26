@@ -22,6 +22,8 @@ class HistoryViewModel : ViewModel() {
     private val client = OkHttpClient()
 
     fun getScan(): LiveData<Scan> = scan
+    private val scansLiveData = MutableLiveData<List<Scan>>()
+    fun getScansLiveData(): LiveData<List<Scan>> = scansLiveData
 
     fun loadScan(){
         val request = Request.Builder()
@@ -44,10 +46,7 @@ class HistoryViewModel : ViewModel() {
                     val JSONProduct = jsonRoot.getJSONObject("product")
                     val unknownCount = JSONProduct.getInt("unknown_ingredients_n");
                     Log.i("TestProduct", "onResponse: $unknownCount")
-                    scan.value = Scan(
-                        "0133333",
-                        2
-                    )
+                    scan.postValue(Scan("0133333",2))
                 }
             }
 
