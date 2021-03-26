@@ -1,0 +1,4 @@
+#Fri Mar 26 07:31:03 CET 2021
+base.0=/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
