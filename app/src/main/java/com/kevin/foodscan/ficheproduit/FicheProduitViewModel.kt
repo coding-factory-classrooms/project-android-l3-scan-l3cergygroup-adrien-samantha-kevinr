@@ -1,14 +1,14 @@
 package com.kevin.foodscan.ficheproduit
 
 import android.util.Log
+import android.widget.TextView
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.kevin.foodscan.R
 import okhttp3.*
-import okhttp3.Headers.*
 import org.json.JSONObject
 import java.io.IOException
-import java.util.*
 
 data class FicheProduit(
         val nomProduit: String,
@@ -19,7 +19,6 @@ data class FicheProduit(
         val imageProduit: String,
 )
 
-
 class FicheProduitViewModel : ViewModel() {
 
     private val produit = MutableLiveData<FicheProduit>()
@@ -27,9 +26,9 @@ class FicheProduitViewModel : ViewModel() {
 
     fun getProduit(): LiveData<FicheProduit> = produit
 
-    fun loadProduit(){
+    fun loadProduit(idProduit: Long){
         val request = Request.Builder()
-                .url("https://world.openfoodfacts.org/api/v0/product/737628064502.json")
+                .url("https://world.openfoodfacts.org/api/v0/product/" + idProduit + ".json")
                 .build()
 
         client.newCall(request).enqueue(object : Callback {
@@ -59,15 +58,16 @@ class FicheProduitViewModel : ViewModel() {
                         val unknownCount = jsonProduct.getInt("unknown_ingredients_n")
                         val image = jsonProduct.getString("image_ingredients_thumb_url")
 
-                        produit.postValue(FicheProduit(
-                                name,
-                                brand,
-                                category,
-                                ingredients,
-                                unknownCount,
-                                image
-                        ))
-
+                        produit.postValue(
+                                FicheProduit(
+                                        name,
+                                        brand,
+                                        category,
+                                        ingredients,
+                                        unknownCount,
+                                        image
+                                )
+                        )
 
                     } catch (e: IOException) {
                         // handler

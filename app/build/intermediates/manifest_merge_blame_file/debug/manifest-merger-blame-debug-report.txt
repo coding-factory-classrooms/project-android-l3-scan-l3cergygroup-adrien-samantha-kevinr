@@ -13,44 +13,109 @@
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:5:5-67
 11-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:5:22-64
-12
-13    <application
-13-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:7:5-22:19
-14        android:allowBackup="true"
-14-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:8:9-35
-15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.3.2] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/b4a4e2693d052802666bef6cc39feff5/core-1.3.2/AndroidManifest.xml:24:18-86
-16        android:debuggable="true"
-17        android:icon="@mipmap/ic_launcher"
-17-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:9:9-43
-18        android:label="@string/app_name"
-18-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:10:9-41
-19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:11:9-54
-20        android:supportsRtl="true"
-20-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:12:9-35
-21        android:testOnly="true"
-22        android:theme="@style/Theme.FoodScan"
-22-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:14:9-46
-23        android:usesCleartextTraffic="true" >
-23-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:13:9-44
-24        <activity android:name="com.kevin.foodscan.ficheproduit.FicheProduitActivity" >
-24-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:15:9-20:20
-24-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:15:19-68
-25            <intent-filter>
-25-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:16:13-19:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:17:17-69
-26-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:17:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:18:17-77
-28-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:18:27-74
-29            </intent-filter>
-30        </activity>
-31        <activity android:name="com.kevin.foodscan.MainActivity" />
-31-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:21:9-59
-31-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:21:19-47
-32    </application>
-33
-34</manifest>
+12    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+12-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:23:5-65
+12-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:23:22-62
+13    <uses-feature
+13-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:26:5-28:36
+14        android:name="android.hardware.camera"
+14-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:27:9-47
+15        android:required="false" />
+15-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:28:9-33
+16    <uses-feature
+16-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:29:5-31:36
+17        android:name="android.hardware.camera.front"
+17-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:30:9-53
+18        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+18-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:31:9-33
+19    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+20    <uses-feature
+20-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:34:5-36:36
+21        android:name="android.hardware.camera.autofocus"
+21-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:35:9-57
+22        android:required="false" />
+22-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:36:9-33
+23    <uses-feature
+23-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:37:5-39:36
+24        android:name="android.hardware.camera.flash"
+24-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:38:9-53
+25        android:required="false" />
+25-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:39:9-33
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:40:5-42:36
+27        android:name="android.hardware.screen.landscape"
+27-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:41:9-57
+28        android:required="false" />
+28-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:42:9-33
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:43:5-45:36
+30        android:name="android.hardware.wifi"
+30-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:44:9-45
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:45:9-33
+32
+33    <application
+33-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:7:5-23:19
+34        android:allowBackup="true"
+34-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:8:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.3.2] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/b4a4e2693d052802666bef6cc39feff5/core-1.3.2/AndroidManifest.xml:24:18-86
+36        android:debuggable="true"
+37        android:icon="@mipmap/ic_launcher"
+37-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:9:9-43
+38        android:label="@string/app_name"
+38-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:10:9-41
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:11:9-54
+40        android:supportsRtl="true"
+40-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:12:9-35
+41        android:testOnly="true"
+42        android:theme="@style/Theme.FoodScan"
+42-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:14:9-46
+43        android:usesCleartextTraffic="true" >
+43-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:13:9-44
+44        <activity android:name="com.kevin.foodscan.ficheproduit.FicheProduitActivity" >
+44-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:15:9-20:20
+44-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:15:19-68
+45            <intent-filter>
+45-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:16:13-19:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:17:17-69
+46-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:17:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:18:17-77
+48-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:18:27-74
+49            </intent-filter>
+50        </activity>
+51        <activity android:name="com.kevin.foodscan.MainActivity" >
+51-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:21:9-22:20
+51-->/Users/kevinrifa/Documents/Coding_Factory/Android/FoodScan/project-android-l3-scan-l3cergygroup-adrien-samantha-kevinr/app/src/main/AndroidManifest.xml:21:19-47
+52        </activity>
+53        <activity
+53-->[pub.devrel:easypermissions:3.0.0] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/d54b7459f05ae1d2a7f92c379996502c/jetified-easypermissions-3.0.0/AndroidManifest.xml:12:9-16:66
+54            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+54-->[pub.devrel:easypermissions:3.0.0] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/d54b7459f05ae1d2a7f92c379996502c/jetified-easypermissions-3.0.0/AndroidManifest.xml:13:13-86
+55            android:exported="false"
+55-->[pub.devrel:easypermissions:3.0.0] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/d54b7459f05ae1d2a7f92c379996502c/jetified-easypermissions-3.0.0/AndroidManifest.xml:14:13-37
+56            android:label=""
+56-->[pub.devrel:easypermissions:3.0.0] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/d54b7459f05ae1d2a7f92c379996502c/jetified-easypermissions-3.0.0/AndroidManifest.xml:15:13-29
+57            android:theme="@style/EasyPermissions.Transparent" />
+57-->[pub.devrel:easypermissions:3.0.0] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/d54b7459f05ae1d2a7f92c379996502c/jetified-easypermissions-3.0.0/AndroidManifest.xml:16:13-63
+58        <activity
+58-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:48:9-54:63
+59            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+59-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:49:13-74
+60            android:clearTaskOnLaunch="true"
+60-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:50:13-45
+61            android:screenOrientation="sensorLandscape"
+61-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:51:13-56
+62            android:stateNotNeeded="true"
+62-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:52:13-42
+63            android:theme="@style/zxing_CaptureTheme"
+63-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:53:13-54
+64            android:windowSoftInputMode="stateAlwaysHidden" />
+64-->[com.journeyapps:zxing-android-embedded:3.0.1] /Users/kevinrifa/.gradle/caches/transforms-2/files-2.1/9ccacd2048edf60fc8a6db603619a726/jetified-zxing-android-embedded-3.0.1/AndroidManifest.xml:54:13-60
+65    </application>
+66
+67</manifest>
