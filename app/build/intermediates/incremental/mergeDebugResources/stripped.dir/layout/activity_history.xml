@@ -7,7 +7,7 @@ android:layout_height="match_parent"
 tools:context=".history.HistoryActivity">
 
 <ImageView
-    android:id="@+id/imgProductimageView"
+    android:id="@+id/imageView"
     android:layout_width="0dp"
     android:layout_height="300dp"
     android:scaleType="centerCrop"
@@ -18,7 +18,7 @@ tools:context=".history.HistoryActivity">
     tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 <TextView
-    android:id="@+id/nomProduitTextView"
+    android:id="@+id/textView"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:background="#38D971"
@@ -27,11 +27,11 @@ tools:context=".history.HistoryActivity">
     android:paddingTop="5dp"
     android:paddingRight="10dp"
     android:paddingBottom="5dp"
-    android:text="Historique des scans :"
+    android:text="Historique des produits scannés :"
     android:textSize="32sp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/imgProductimageView" />
+    app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 <TableLayout
     android:layout_width="0dp"
@@ -40,7 +40,7 @@ tools:context=".history.HistoryActivity">
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="1.0"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/nomProduitTextView"
+    app:layout_constraintTop_toBottomOf="@+id/textView"
     app:layout_constraintVertical_bias="0.0">
 
     <TableRow

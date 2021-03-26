@@ -2295,6 +2295,7 @@ layout zxing_capture
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap logoscan
+mipmap vegetables
 plurals mtrl_badge_content_description
 raw zxing_beep
 string abc_action_bar_home_description
