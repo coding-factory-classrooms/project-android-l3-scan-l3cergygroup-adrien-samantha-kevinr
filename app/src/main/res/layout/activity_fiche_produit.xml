@@ -54,6 +54,13 @@
                 android:padding="8dp"
                 android:text="Marque du produit"
                 android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/marqueProduitTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="TextView" />
         </TableRow>
 
         <TableRow
@@ -67,6 +74,13 @@
                 android:padding="8dp"
                 android:text="Catégorie du produit"
                 android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/categorieProduitTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="TextView" />
         </TableRow>
 
         <TableRow
@@ -80,6 +94,13 @@
                 android:padding="8dp"
                 android:text="Ingrédients du produit"
                 android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/IngredientsProduitTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="TextView" />
         </TableRow>
 
         <TableRow
@@ -93,6 +114,13 @@
                 android:padding="8dp"
                 android:text="Nombre de produits inconnus"
                 android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/nbProduitsInconnusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="TextView" />
         </TableRow>
     </TableLayout>
 
