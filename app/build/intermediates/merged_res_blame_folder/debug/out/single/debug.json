@@ -68,6 +68,10 @@
         "source": "C:\\Users\\Samantha\\Desktop\\androidFoodScanner\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\Samantha\\Desktop\\androidFoodScanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logoscan.jpg.flat",
+        "source": "C:\\Users\\Samantha\\Desktop\\androidFoodScanner\\app\\src\\main\\res\\mipmap-mdpi\\logoscan.jpg"
+    },
+    {
         "merged": "C:\\Users\\Samantha\\Desktop\\androidFoodScanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Samantha\\Desktop\\androidFoodScanner\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },

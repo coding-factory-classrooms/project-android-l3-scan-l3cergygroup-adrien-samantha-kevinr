@@ -46,7 +46,7 @@ class HistoryViewModel : ViewModel() {
                     Log.i("TestProduct", "onResponse: $unknownCount")
                     scan.value = Scan(
                         "0133333",
-                        unknownCount
+                        2
                     )
                 }
             }

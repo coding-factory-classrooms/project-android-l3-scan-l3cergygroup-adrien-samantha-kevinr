@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.cardview.widget.CardView
 import com.google.zxing.integration.android.IntentIntegrator
 import com.kevin.foodscan.MainActivity
@@ -21,6 +22,7 @@ import pub.devrel.easypermissions.EasyPermissions
 import java.util.jar.Manifest
 import com.journeyapps.barcodescanner.CaptureActivity
 import com.kevin.foodscan.history.HistoryActivity
+import com.kevin.foodscan.history.HistoryViewModel
 
 class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks,
     EasyPermissions.RationaleCallbacks {

@@ -51,7 +51,7 @@ tools:context=".history.HistoryActivity">
         <TextView
             android:id="@+id/scantextView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="8dp"
             android:text="Code scanné : "
             android:textSize="15sp" />
