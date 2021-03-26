@@ -25,7 +25,6 @@ class FicheProduitViewModel : ViewModel() {
     private val produit = MutableLiveData<FicheProduit>()
     private val client = OkHttpClient()
 
-
     fun getProduit(): LiveData<FicheProduit> = produit
 
     fun loadProduit(){
