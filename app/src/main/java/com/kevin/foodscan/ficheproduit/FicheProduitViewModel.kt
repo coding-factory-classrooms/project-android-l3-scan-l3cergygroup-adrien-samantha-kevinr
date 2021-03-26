@@ -73,9 +73,6 @@ class FicheProduitViewModel : ViewModel() {
                         // handler
                         Log.e("FicheProduitViewModel", "onResponse: " + e)
                     }
-
-
-
                 }
             }
         })
