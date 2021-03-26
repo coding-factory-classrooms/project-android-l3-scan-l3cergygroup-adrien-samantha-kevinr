@@ -34,11 +34,14 @@ class FicheProduitViewModel : ViewModel() {
                 .build()
         client.newCall(request).enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {
-                e.printStackTrace()
+                //e.printStackTrace()
+                Log.e("FicheProduitViewModel", "onFailure: " + e, )
             }
+
             override fun onResponse(call: Call, response: Response) {
                 response.use {
                     if (!response.isSuccessful) throw IOException("Unexpected code $response")
+
                     for ((name, value) in response.headers) {
                         println("ResultProduct: $name: $value")
                     }
@@ -61,10 +64,10 @@ class FicheProduitViewModel : ViewModel() {
                             unknownCount,
                             image
                     )
+
                     try {
                         // some code
                         JSONObject(body)
-
                     } catch (e: IOException) {
                         // handler
                         Log.e("FicheProduitViewModel", "onResponse: " + e)
